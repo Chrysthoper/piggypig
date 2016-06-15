@@ -1,0 +1,19 @@
+
+<!-- MAIN CONTENT -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <com.chryscontreras.micochinito.ToolbarView
+        android:id="@+id/activity_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:gravity="center"
+        android:text="@string/hello_landscape_fragment" />
+</FrameLayout>

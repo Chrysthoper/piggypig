@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Mi Cochinito</string>
+    <string name="title_activity_actividad_principal">ActividadPrincipal</string>
+
+    <string name="hello_portrait_fragment">Hello Portrait fragment</string>
+    <string name="hello_landscape_fragment">Hello Landscape fragment</string>
+</resources>
