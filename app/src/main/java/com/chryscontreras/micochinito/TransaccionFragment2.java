@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import org.codepond.wizardroid.WizardStep;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -21,7 +23,7 @@ import Persistencia.ContextoBD;
 /**
  * Created by Chrysthoper on 14/08/2016.
  */
-public class TransaccionFragment2 extends Fragment {
+public class TransaccionFragment2 extends WizardStep {
     public ITransaccionesEventos Eventos;
 
     public ContextoBD ContextoBD;

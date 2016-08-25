@@ -26,4 +26,5 @@ dependencies {
     compile 'com.android.support:design:22.2.0'
     compile 'com.sothree.slidinguppanel:library:3.3.0'
     compile 'com.squareup:otto:+'
+    compile 'org.codepond:wizardroid:1.3.1'
 }

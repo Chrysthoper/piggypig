@@ -6,11 +6,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import org.codepond.wizardroid.WizardStep;
+
 import Interfaces.ITransaccionesEventos;
 
 // Instances of this class are fragments representing a single
 // object in our collection.
-public class TransaccionFragment1 extends Fragment {
+public class TransaccionFragment1 extends WizardStep {
     public ITransaccionesEventos Eventos;
 
     @Override

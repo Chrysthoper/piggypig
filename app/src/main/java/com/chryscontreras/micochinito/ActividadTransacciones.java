@@ -16,11 +16,13 @@ public class ActividadTransacciones extends FragmentActivity implements ITransac
         super.onCreate(savedInstanceState);
         setContentView(R.layout.actividad_transacciones);
 
+        /*
         PagerAdapter = new TransaccionPagerAdapter(getSupportFragmentManager());
         PagerAdapter.addFragment(new TransaccionFragment1());
         PagerAdapter.addFragment(new TransaccionFragment2());
         mViewPager = (ViewPager) findViewById(R.id.pager);
-        mViewPager.setAdapter(PagerAdapter );
+        mViewPager.setAdapter(PagerAdapter);
+        */
     }
 
     @Override
