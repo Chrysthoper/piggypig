@@ -3,19 +3,15 @@ package com.chryscontreras.micochinito;
 import android.app.Activity;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
-import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Display;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.Surface;
 import android.view.WindowManager;
 import android.widget.Toast;
 
-import com.squareup.otto.Bus;
 import com.squareup.otto.Subscribe;
-import com.squareup.otto.ThreadEnforcer;
 
 public class ActividadPrincipal extends Activity {
 
@@ -47,6 +43,7 @@ public class ActividadPrincipal extends Activity {
     public void OnSecondItemClicked(SecondItemClicked secondItemClicked){
         Toast.makeText(this, "SecondItem - Clicked!!!", Toast.LENGTH_LONG).show();
         Log.d("SecondItem", "Clicked !!");
+        startActivity(new Intent(getApplicationContext(), ActividadTransacciones.class));
     }
     @Override
     protected void onStart(){

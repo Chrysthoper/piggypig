@@ -4,4 +4,5 @@
 
     <string name="hello_portrait_fragment">Hello Portrait fragment</string>
     <string name="hello_landscape_fragment">Hello Landscape fragment</string>
+    <string name="title_activity_actividad_transacciones">Transacciones</string>
 </resources>
