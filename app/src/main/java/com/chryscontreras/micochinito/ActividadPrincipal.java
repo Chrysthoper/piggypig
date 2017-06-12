@@ -13,8 +13,11 @@ import android.widget.Toast;
 
 import com.squareup.otto.Subscribe;
 
+import java.util.Calendar;
+
 public class ActividadPrincipal extends Activity {
 
+    Calendar cTransaccion = Calendar.getInstance();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,7 +46,15 @@ public class ActividadPrincipal extends Activity {
     public void OnSecondItemClicked(SecondItemClicked secondItemClicked){
         Toast.makeText(this, "SecondItem - Clicked!!!", Toast.LENGTH_LONG).show();
         Log.d("SecondItem", "Clicked !!");
-        startActivity(new Intent(getApplicationContext(), ActividadTransacciones.class));
+
+        String fecha = Util.FechaToFormat(cTransaccion.getTime());
+        final Intent intent = new Intent(getApplicationContext(), ActividadTransacciones.class);
+        intent.putExtra("FECHA", fecha);
+        intent.putExtra("TIPO", 1);
+        intent.putExtra("OP", 'A');
+        intent.putExtra("CUENTA_ID", 2);//Cuentas.get(which).id);
+
+        startActivity(intent);//new Intent(getApplicationContext(), ActividadTransacciones.class));
     }
     @Override
     protected void onStart(){

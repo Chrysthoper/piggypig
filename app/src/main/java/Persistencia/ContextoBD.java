@@ -10,6 +10,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class ContextoBD extends SQLiteOpenHelper {
 
     public Categorias Categorias;
+    public Transacciones Transacciones;
 
     public static final int BD_VERSION = 1;
     public static final String BD_NOMBRE = "PiggyPig.db";
@@ -53,7 +54,7 @@ public class ContextoBD extends SQLiteOpenHelper {
     public ContextoBD(Context context) {
         super(context, BD_NOMBRE, null, BD_VERSION);
         Categorias = new Categorias(this);
-        //Transacciones = new TD_Transacciones(this);
+        Transacciones = new Transacciones(this);
     }
 
     @Override
